@@ -54,7 +54,7 @@ CREATE TABLE `CaseManagers` (
   `basedCity` Text NOT NULL,
   `basedState` Text NOT NULL,
   `startingDate` Date NOT NULL,
-  `infected_id` Int,
+  `infected_id` Int UNIQUE,
   FOREIGN KEY (`person_id`) REFERENCES `Individuals`(`person_id`),
   FOREIGN KEY (`infected_id`) REFERENCES `Individuals`(`person_id`)
 );
@@ -82,7 +82,9 @@ CREATE TABLE `Cases` (
   `covidDeath` Boolean default False,
   `commMethod_id` Int NOT NULL,
   `cm_person_id` Int NOT NULL,
-  `tracked_person_id` Int NOT NULL,
+  `tracked_person_id` Int UNIQUE NOT NULL,
+  FOREIGN KEY (`totalRiskLevel_id`) REFERENCES `RiskLevels`(`risk_id`),
+  FOREIGN KEY (`commMethod_id`) REFERENCES `CommunicationMethods`(`commMethod_id`),
   FOREIGN KEY (`cm_person_id`) REFERENCES `Individuals`(`person_id`),
   FOREIGN KEY (`tracked_person_id`) REFERENCES `Individuals`(`person_id`)
 );
@@ -125,7 +127,7 @@ ALTER TABLE `Symptoms` AUTO_INCREMENT=1;
 CREATE TABLE `MonitoringLogs` (
     `monitor_id` Int PRIMARY KEY auto_increment,
     `timestamp` DateTime NOT NULL,
-    `temp` Decimal(3,1) NOT NULL,
+    `temp` Decimal(4,1) NOT NULL,
     `tempType` Text NOT NULL CHECK (`tempType` = "F" OR `tempType` = "C"),
     `additionalInfo` Text,
     `case_id` Int NOT NULL,
