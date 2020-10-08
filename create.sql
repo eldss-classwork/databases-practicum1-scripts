@@ -93,6 +93,7 @@ ALTER TABLE `Cases` AUTO_INCREMENT=1;
 CREATE TABLE `Tests` (
     `test_id` Int PRIMARY KEY auto_increment,
     `name` Text UNIQUE NOT NULL,
+    `method` Text NOT NULL,
     `accuracy` Decimal(2,2) NOT NULL,
     `estimatedResultTimeHrs` Int NOT NULL
 );

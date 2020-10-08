@@ -50,7 +50,7 @@ VALUES
     ("2020-08-15", 1, "2020-09-01", NULL, 1, 1, 0, 1, 98, 10);
 
 -- Fake test info
-INSERT INTO `Tests` (`name`, `accuracy`, `estimatedResultTimeHrs`) VALUES ("Nasal Swab", 0.95, 24),("Cheek Swab", 0.85, 24),("Experimental Test 1", 0.99, 72),("Experimental Test 2", 0.8, 1);
+INSERT INTO `Tests` (`name`, `method`, `accuracy`, `estimatedResultTimeHrs`) VALUES ("Experimental Test 1", "Nasal Swab", 0.95, 24),("Experimental Test 2", "Cheek Swab", 0.85, 24),("Experimental Test 3", "Nasal Swab", 0.99, 72),("Experimental Test 4", "Nasal Swab", 0.8, 1);
 
 -- Test outcomes
 INSERT INTO `PossibleTestOutcomes`(`outcome`) VALUES ("Positive"),("Negative"),("Equivocal");
@@ -101,7 +101,7 @@ INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (1,10),(63,13),(67,
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (14,9),(67,10),(10,4),(85,7),(23,9),(39,5),(96,8),(14,7),(14,8),(57,13);
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (75,8),(33,4),(95,2),(89,2),(32,2),(97,9),(66,10),(60,2),(60,6),(17,13);
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (38,10),(64,1),(98,12),(16,13),(13,11),(76,8),(31,5),(6,12),(25,9),(41,3);
-INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (10,11),(71,7),(39,5),(45,7),(16,3),(60,2),(62,6),(79,8),(84,12),(85,3);
+INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (10,11),(71,7),(39,4),(45,7),(16,3),(60,2),(62,6),(79,8),(84,12),(85,3);
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (15,6),(33,12),(21,2),(56,7),(36,10),(93,5),(62,2),(66,12),(98,2),(47,6);
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (18,2),(3,7),(20,12),(94,3),(71,10),(43,4),(49,12),(88,5),(95,4),(9,11);
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (1,6),(27,11),(66,7),(5,5),(51,11),(83,8),(63,4),(82,7),(10,6),(91,5);
