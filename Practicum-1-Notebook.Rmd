@@ -8,27 +8,44 @@ output:
 
 ## Conceptual Model: UML
 
-
-[Click here  to view the conceptual model in Lucid Chart.](https://app.lucidchart.com/invitations/accept/5602312e-dfc3-4423-975c-47190ce6022e)
+View the conceptual model in Lucid Chart here: https://app.lucidchart.com/invitations/accept/5602312e-dfc3-4423-975c-47190ce6022e
 
 <!-- Ensure this is the most up to date image -->
-![Conceptual UML](CS5200 - Practicum 1_UML.png)\
+![Conceptual UML](imgs/CS5200 - Practicum 1_UML.png)\
 
 ## Logical Model: ERD
 
-[Click here  to view the logical model in Lucid Chart.](https://app.lucidchart.com/invitations/accept/7b497cbf-268d-4a03-b1a7-822b5a844fea)
+View the logical model in Lucid Chart here: https://app.lucidchart.com/invitations/accept/7b497cbf-268d-4a03-b1a7-822b5a844fea
 
 <!-- Ensure this is the most up to date image -->
-![Logical ERD](CS5200 - Practicum 1_ERD.png)\
+![Logical ERD](imgs/CS5200 - Practicum 1_ERD.png)\
 
 ## Schema
 
-[Click here  to view the schema in Google Docs.](https://docs.google.com/document/d/1o8pk51aed3BJSaBcwO2EMbT8I3ru_wpGTcTN4W-DbIM/edit?usp=sharing)
+View the schema in Google Docs here: https://docs.google.com/document/d/1o8pk51aed3BJSaBcwO2EMbT8I3ru_wpGTcTN4W-DbIM/edit?usp=sharing
 
 <!-- Ensure this is the most up to date image -->
-![schema](Practicum1-Schema.png)\
+![schema](imgs/Practicum1-Schema.png)\
 
 ## Creating Database Tables
+
+Should you wish to inspect the scripts that create the database and populate data, they can be found at https://github.com/eldss-classwork/databases-practicum1-scripts along with other Practicum 1 related files, including this one.
+
+The following images will show a progression from an empty database through table creation in MySQL Workbench.
+
+The MySQL Workbench start screen.
+
+![mysql start screen](imgs/MySQLWorkbench-IntroScreen.png)\
+
+The newly created, empty `test` database.
+
+![mysql empty db](imgs/MySQLWorkbench-emptydb.png)\
+
+The `test` database after table creation.
+
+![mysql after creation](imgs/MySQLWorkbench-create.png)\
+
+
 
 ## Populating The Database
 
