@@ -1,2 +1,3 @@
 # databases-practicum1-scripts
-SQL scripts for practicum 1 in databases class.
+
+Practicum 1 materials for databases class. Previously held only SQL scripts, hence the title of the repo.
