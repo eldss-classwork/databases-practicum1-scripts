@@ -101,11 +101,11 @@ INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (1,10),(63,13),(67,
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (14,9),(67,10),(10,4),(85,7),(23,9),(39,5),(96,8),(14,7),(14,8),(57,13);
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (75,8),(33,4),(95,2),(89,2),(32,2),(97,9),(66,10),(60,2),(60,6),(17,13);
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (38,10),(64,1),(98,12),(16,13),(13,11),(76,8),(31,5),(6,12),(25,9),(41,3);
-INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (10,11),(71,7),(39,4),(45,7),(16,3),(60,2),(62,6),(79,8),(84,12),(85,3);
+INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (10,11),(71,7),(39,4),(45,7),(16,3),(60,4),(62,6),(79,8),(84,12),(85,3);
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (15,6),(33,12),(21,2),(56,7),(36,10),(93,5),(62,2),(66,12),(98,2),(47,6);
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (18,2),(3,7),(20,12),(94,3),(71,10),(43,4),(49,12),(88,5),(95,4),(9,11);
 INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (1,6),(27,11),(66,7),(5,5),(51,11),(83,8),(63,4),(82,7),(10,6),(91,5);
-INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (2,10),(52,7),(53,4),(14,3),(91,11),(12,3),(12,3),(93,12),(47,4),(81,9);
+INSERT INTO `SymptomList` (`monitor_id`,`symptom_id`) VALUES (2,10),(52,7),(53,4),(14,3),(91,11),(12,4),(12,3),(93,12),(47,4),(81,9);
 
 -- Contact logs
 INSERT INTO `ContactLogs` (`timestamp`,`latitude`,`longitude`,`contactDurationMin`,`maskUseInfected`,`maskUseContact`,`distanceFeet`,`risk_id`,`contact_person_id`,`case_id`) 
@@ -170,16 +170,16 @@ VALUES
     ("vitae",2,"velit. Aliquam nisl. Nulla eu");
 
 -- Step List
-INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (6,9),(3,3),(7,6),(6,3),(5,8),(4,6),(7,5),(7,6),(3,1),(8,8);
-INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (5,7),(1,9),(1,9),(6,6),(2,9),(2,4),(8,3),(4,1),(6,1),(9,4);
-INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (6,5),(8,2),(3,5),(8,2),(4,5),(3,1),(5,4),(7,1),(2,3),(4,1);
-INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (5,6),(2,4),(4,2),(9,9),(5,1),(8,2),(7,3),(1,2),(4,3),(1,6);
-INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (4,8),(1,6),(7,4),(9,1),(8,3),(8,1),(2,3),(4,8),(6,9),(2,6);
-INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (4,4),(9,2),(3,3),(2,2),(6,1),(1,9),(5,7),(1,2),(4,1),(2,4);
-INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (5,4),(1,2),(2,3),(3,5),(5,7),(7,6),(5,6),(8,3),(1,5),(1,7);
-INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (6,3),(2,4),(8,8),(7,5),(9,5),(9,5),(1,9),(4,7),(2,4),(8,5);
-INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (1,3),(9,1),(6,3),(7,2),(6,2),(4,1),(8,1),(2,5),(2,5),(7,1);
-INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (2,4),(1,7),(5,5),(1,9),(9,3),(8,6),(6,8),(2,5),(5,9),(5,3);
+INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (7,8),(6,3),(5,8),(4,6),(7,5),(7,7),(3,1),(8,8);
+INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (1,1),(1,9),(6,6),(2,9),(2,4),(8,3),(9,4);
+INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (6,5),(3,5),(4,5),(5,4),(7,1);
+INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (5,6),(4,2),(9,9),(5,1),(8,2),(7,3),(4,3),(1,6);
+INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (7,4),(4,8),(6,9),(2,6);
+INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (4,4),(9,2),(3,3),(2,2),(6,1),(1,4);
+INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (1,2),(2,3),(5,7),(7,6),(1,5);
+INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (9,5),(1,8),(4,7),(8,5);
+INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (1,3),(9,1),(7,2),(6,2),(4,1),(8,1);
+INSERT INTO `StepList` (`message_id`,`step_id`) VALUES (1,7),(5,5),(9,3),(8,6),(6,8),(2,5),(5,9),(5,3);
 
 -- CommunicationLogs
 -- These will not line up with Cases correctly...
@@ -198,13 +198,13 @@ INSERT INTO `CommunicationLogs` (`timestamp`,`method_id`,`case_id`,`message_id`)
 INSERT INTO `Services` (`name`,`phone`,`link`,`description`,`type`,`city`,`supports`) VALUES ("Tortor PC","(320) 145-0903","http://www.IQLQOTWC.vom","tempus, lorem fringilla","Self","Deline","et tristique"),("Malesuada Integer Id Foundation","(194) 229-9536","http://www.MKHXYVYL.mom","lacus. Aliquam","Self","Jerzu","elit, pharetra"),("Sapien Ltd","(283) 455-1467","http://www.QYSYMCJI.nom","nibh dolor, nonummy ac, feugiat non, lobortis quis, pede. Suspendisse","Self","Grande Prairie","dis parturient"),("Blandit Company","(445) 342-0423","http://www.KAMFLSKH.mom","eget","Support","Fayetteville","tincidunt adipiscing."),("Venenatis Lacus Etiam Corp.","(541) 753-6442","http://www.PQXEUXLE.com","odio vel est","Self","Issy-les-Moulineaux","semper rutrum."),("Et Industries","(958) 662-6764","http://www.PZDJLYZS.kom","ullamcorper. Duis","Self","Talara","Proin dolor."),("Scelerisque Scelerisque Dui Foundation","(639) 827-3110","http://www.MEXYEOGX.lom","arcu vel quam dignissim pharetra. Nam ac nulla.","Support","Ivanteyevka","Pellentesque tincidunt"),("Pellentesque Tellus Sem LLC","(272) 213-8476","http://www.YYQXIKNO.com","ut nisi a odio semper cursus. Integer mollis. Integer tincidunt","Self","Alcalá de Henares","blandit mattis."),("Varius Corp.","(149) 578-0110","http://www.TWYITTXF.qom","dis parturient montes, nascetur ridiculus mus. Proin","Support","Eugene","a, scelerisque"),("Et Ultrices LLC","(428) 442-8659","http://www.UGONTJOM.fom","Donec consectetuer","Self","Vertou","interdum libero");
 
 -- ServiceList
-INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (4,1),(7,6),(4,2),(9,3),(6,4),(8,1),(5,2),(2,3),(4,3),(9,9);
-INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (7,1),(2,9),(5,6),(7,10),(2,10),(8,6),(7,6),(4,2),(6,2),(7,1);
-INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (1,3),(3,10),(2,6),(2,1),(4,6),(8,7),(4,8),(1,2),(2,10),(6,6);
-INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (2,2),(9,1),(9,3),(2,9),(9,9),(4,5),(4,6),(1,9),(8,4),(8,2);
-INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (8,1),(5,2),(6,3),(3,6),(3,5),(7,9),(9,1),(1,6),(8,6),(1,6);
-INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (4,9),(4,7),(1,1),(5,2),(3,2),(1,4),(7,7),(3,3),(9,4),(5,8);
-INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (4,6),(5,4),(3,5),(3,9),(5,8),(3,6),(6,5),(5,6),(8,4),(3,6);
-INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (4,1),(8,9),(5,5),(6,1),(8,3),(8,7),(1,4),(8,8),(9,4),(4,3);
-INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (8,1),(4,4),(4,5),(5,6),(4,3),(7,4),(1,9),(9,6),(8,1),(9,9);
-INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (9,4),(2,4),(4,7),(7,3),(1,1),(6,1),(5,5),(3,3),(2,2),(3,1);
+INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (4,1),(7,6),(9,3),(6,4),(8,1),(2,3);
+INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (7,1),(2,9),(7,10),(2,10),(8,6),(4,2),(6,2);
+INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (1,3),(3,10),(2,6),(2,1),(4,6),(8,7),(4,8),(1,2),(6,6);
+INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (2,2),(9,9),(1,9),(8,2);
+INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (5,2),(6,3),(7,9),(9,1),(1,6);
+INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (4,9),(3,2),(1,4),(7,7),(3,3),(9,4),(5,8);
+INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (5,4),(3,5),(3,9),(6,5),(8,4),(3,6);
+INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (8,9),(5,5),(8,3),(8,8),(4,3);
+INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (4,4),(4,5),(5,6),(7,4),(9,6);
+INSERT INTO `ServiceList` (`message_id`,`service_id`) VALUES (2,4),(4,7),(7,3),(1,1),(6,1),(3,1);
