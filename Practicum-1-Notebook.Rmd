@@ -78,4 +78,15 @@ The following photos provide a detailed look at the schema of each table as it w
 
 ## Populating The Database
 
+The script for populating data into our database can be found at the following link:
+
+https://github.com/eldss-classwork/databases-practicum1-scripts/blob/master/populate.sql
+
+Demonstrations that the data was loaded correctly can be found in the queries below. That is, they return the data that was loaded.
+
 ## Queries
+
+![Communications sent to exposure level groups](imgs/Query_Evan1.png)\
+![Deaths by state](imgs/Query_Evan2.png)\
+![Test information](imgs/Query_Evan3.png)\
+![Did not provide daily checkins in quarantine](imgs/Query_Evan4.png)\
