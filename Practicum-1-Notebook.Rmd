@@ -3,7 +3,6 @@ title: 'CS5200 Fall 2020: Practicum 1'
 author: "Chandra Davis, Evan Douglass"
 output:
   pdf_document: default
-  html_notebook: default
 ---
 
 The steps we completed for Practicum 1 are detailed below. Please note that there are links to each image that requires it in each section. We decided to focus our attention on the case management aspect of the contract tracing problem.
