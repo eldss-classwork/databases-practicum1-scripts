@@ -61,13 +61,13 @@ CREATE TABLE `CaseManagers` (
 
 CREATE TABLE `RiskLevels` (
     `risk_id` Int PRIMARY KEY auto_increment,
-    `risk` Text UNIQUE NOT NULL
+    `risk` VARCHAR(10) UNIQUE NOT NULL
 );
 ALTER TABLE `RiskLevels` AUTO_INCREMENT=1;
 
 CREATE TABLE `CommunicationMethods` (
     `commMethod_id` Int PRIMARY KEY auto_increment,
-    `commMethod` Text UNIQUE NOT NULL
+    `commMethod` VARCHAR(25) UNIQUE NOT NULL
 );
 ALTER TABLE `CommunicationMethods` AUTO_INCREMENT=1;
 
@@ -92,7 +92,7 @@ ALTER TABLE `Cases` AUTO_INCREMENT=1;
 
 CREATE TABLE `Tests` (
     `test_id` Int PRIMARY KEY auto_increment,
-    `name` Text UNIQUE NOT NULL,
+    `name` VARCHAR(50) UNIQUE NOT NULL,
     `method` Text NOT NULL,
     `accuracy` Decimal(2,2) NOT NULL,
     `estimatedResultTimeHrs` Int NOT NULL
@@ -101,7 +101,7 @@ ALTER TABLE `Tests` AUTO_INCREMENT=1;
 
 CREATE TABLE `PossibleTestOutcomes` (
     `outcome_id` Int PRIMARY KEY auto_increment,
-    `outcome` Text UNIQUE NOT NULL
+    `outcome` VARCHAR(25) UNIQUE NOT NULL
 );
 ALTER TABLE `PossibleTestOutcomes` AUTO_INCREMENT=1;
 
@@ -121,7 +121,7 @@ ALTER TABLE `TestResults` AUTO_INCREMENT=1;
 
 CREATE TABLE `Symptoms` (
     `symptom_id` Int PRIMARY KEY auto_increment,
-    `name` Text UNIQUE NOT NULL
+    `name` VARCHAR(25) UNIQUE NOT NULL
 );
 ALTER TABLE `Symptoms` AUTO_INCREMENT=1;
 
