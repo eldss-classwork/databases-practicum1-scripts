@@ -141,7 +141,8 @@ CREATE TABLE `SymptomList` (
     `monitor_id` Int NOT NULL,
     `symptom_id` Int NOT NULL,
     FOREIGN KEY (`monitor_id`) REFERENCES `MonitoringLogs`(`monitor_id`),
-    FOREIGN KEY (`symptom_id`) REFERENCES `Symptoms`(`symptom_id`)
+    FOREIGN KEY (`symptom_id`) REFERENCES `Symptoms`(`symptom_id`),
+    CONSTRAINT UQ_monitor_symptom_composite UNIQUE (`monitor_id`, `symptom_id`)
 );
 ALTER TABLE `SymptomList` AUTO_INCREMENT=1;
 
@@ -187,7 +188,8 @@ CREATE TABLE `StepList` (
     `message_id` Int NOT NULL,
     `step_id` Int NOT NULL,
     FOREIGN KEY (`message_id`) REFERENCES `Messages`(`message_id`),
-    FOREIGN KEY (`step_id`) REFERENCES `NextSteps`(`step_id`)
+    FOREIGN KEY (`step_id`) REFERENCES `NextSteps`(`step_id`),
+    CONSTRAINT UQ_mesage_step_composite UNIQUE (`message_id`, `step_id`)
 );
 ALTER TABLE `StepList` AUTO_INCREMENT=1;
 
@@ -221,6 +223,7 @@ CREATE TABLE `ServiceList` (
     `message_id` Int NOT NULL,
     `service_id` Int NOT NULL,
     FOREIGN KEY (`message_id`) REFERENCES `Messages`(`message_id`),
-    FOREIGN KEY (`service_id`) REFERENCES `Services`(`service_id`)
+    FOREIGN KEY (`service_id`) REFERENCES `Services`(`service_id`),
+    CONSTRAINT UQ_message_service_composite UNIQUE (`message_id`, `service_id`)
 );
 ALTER TABLE `ServiceList` AUTO_INCREMENT=1;
