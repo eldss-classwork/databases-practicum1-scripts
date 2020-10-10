@@ -26,7 +26,7 @@ INSERT INTO `TrackedIndividuals` (`person_id`,`dob`,`race`,`sex`) VALUES (81,"20
 INSERT INTO `TrackedIndividuals` (`person_id`,`dob`,`race`,`sex`) VALUES (91,"2020-09-01","American Indian or Alaska Native","Female"),(92,"2019-10-10","Native Hawaiian","Female"),(93,"2020-02-19","White","Male"),(94,"2020-05-10","White","Female"),(95,"2020-06-10","Other Pacific Islander","Female");
 
 -- 5 CaseWorkers
-INSERT INTO `CaseManagers` (`person_id`,`basedCity`,`basedState`,`startingDate`,`infected_id`) VALUES (96,"Namyangju","Gye","2021-07-28",NULL),(97,"Morrinsville","North Island","2020-01-22",NULL),(98,"Fortune","Newfoundland and Labrador","2021-03-28",NULL),(99,"Vienna","Wie","2020-11-22",NULL),(100,"Lagos","Lagos","2020-04-27",NULL);
+INSERT INTO `CaseManagers` (`person_id`,`basedCity`,`basedState`,`startingDate`,`infected_id`) VALUES (96,"Namyangju","Gye","2020-01-22",NULL),(97,"Morrinsville","North Island","2020-03-28",NULL),(98,"Fortune","Newfoundland and Labrador","2020-04-27",NULL),(99,"Vienna","Wie","2020-05-22",NULL),(100,"Lagos","Lagos","2020-07-27",NULL);
 
 -- Risk levels
 INSERT INTO `RiskLevels`(`risk`) VALUES ("Low"),("Medium"),("High");
@@ -38,16 +38,28 @@ INSERT INTO `CommunicationMethods`(`commMethod`) VALUES ("Phone"),("Email"),("SM
 INSERT INTO 
     `Cases` (`estimatedExposureDate`,`totalRiskLevel_id`,`quarantineStartDate`,`closureDate`,`infected`,`hospitalized`,`covidDeath`,`commMethod_id`,`cm_person_id`,`tracked_person_id`)
 VALUES 
-    ("2020-02-02", 1, "2020-02-09", "2020-03-01", 0, 0, 0, 1, 99, 1),
-    ("2020-03-01", 2, "2020-03-07", "2020-04-02", 1, 1, 0, 2, 100, 2),
-    ("2020-03-15", 3, "2020-03-20", "2020-04-15", 1, 1, 1, 3, 100, 3),
+    ("2020-02-02", 1, "2020-02-09", "2020-03-01", 0, 0, 0, 1, 96, 1),
+    ("2020-02-09", 1, "2020-02-09", "2020-03-01", 0, 0, 0, 1, 96, 11),
+    ("2020-02-07", 1, "2020-05-20", "2020-06-10", 1, 1, 0, 3, 96, 27),
+    ("2020-02-09", 3, "2020-06-25", "2020-07-11", 0, 0, 0, 1, 96, 81),
+    ("2020-03-01", 2, "2020-03-07", "2020-04-02", 1, 1, 0, 2, 96, 2),
+    ("2020-03-15", 3, "2020-03-20", "2020-04-15", 1, 1, 1, 3, 96, 3),
     ("2020-04-15", 1, "2020-05-01", "2020-05-15", 0, 0, 0, 1, 97, 4),
-    ("2020-04-15", 2, "2020-04-20", "2020-05-05", 1, 0, 0, 2, 98, 5),
-    ("2020-05-15", 3, "2020-05-20", "2020-06-10", 1, 1, 0, 3, 99, 6),
-    ("2020-06-15", 1, "2020-06-25", "2020-07-11", 0, 0, 0, 1, 100, 7),
+    ("2020-04-15", 2, "2020-04-20", "2020-05-05", 1, 0, 0, 2, 97, 5),
+    ("2020-04-16", 3, "2020-04-21", "2020-05-07", 1, 1, 0, 2, 97, 17),
+    ("2020-04-18", 2, "2020-04-21", "2020-05-01", 1, 1, 1, 1, 97, 18),
+    ("2020-04-18", 1, "2020-04-21", "2020-05-07", 0, 0, 0, 1, 97, 54),
+    ("2020-05-15", 3, "2020-05-20", "2020-06-10", 1, 1, 0, 3, 98, 6),
+    ("2020-06-15", 1, "2020-06-25", "2020-07-11", 0, 0, 0, 1, 98, 7),
+    ("2020-06-17", 2, "2020-06-26", "2020-07-15", 0, 0, 0, 3, 98, 21),
+    ("2020-06-22", 1, "2020-06-26", "2020-07-15", 1, 0, 0, 2, 98, 29),
+    ("2020-06-20", 3, "2020-06-26", "2020-07-20", 1, 1, 1, 2, 98, 66),
+    ("2020-06-16", 2, "2020-06-26", "2020-07-18", 1, 1, 1, 2, 99, 42),
+    ("2020-06-22", 1, "2020-06-26", "2020-07-20", 1, 1, 0, 3, 99, 92),
+    ("2020-06-15", 2, "2020-06-26", "2020-07-20", 0, 0, 0, 3, 99, 74);
     ("2020-07-15", 2, "2020-07-17", "2020-07-30", 1, 1, 1, 2, 99, 8),
     ("2020-08-15", 3, "2020-08-21", "2020-09-20", 1, 1, 0, 3, 99, 9),
-    ("2020-08-15", 1, "2020-09-01", NULL, 1, 1, 0, 1, 98, 10);
+    ("2020-08-15", 1, "2020-09-01", NULL, 1, 1, 0, 1, 99, 10);
 
 -- Fake test info
 INSERT INTO `Tests` (`name`, `method`, `accuracy`, `estimatedResultTimeHrs`) VALUES ("Experimental Test 1", "Nasal Swab", 0.95, 24),("Experimental Test 2", "Cheek Swab", 0.85, 24),("Experimental Test 3", "Nasal Swab", 0.99, 72),("Experimental Test 4", "Nasal Swab", 0.8, 1);

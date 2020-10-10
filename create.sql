@@ -101,7 +101,7 @@ ALTER TABLE `Tests` AUTO_INCREMENT=1;
 
 CREATE TABLE `PossibleTestOutcomes` (
     `outcome_id` Int PRIMARY KEY auto_increment,
-    `outcome` Text NOT NULL
+    `outcome` Text UNIQUE NOT NULL
 );
 ALTER TABLE `PossibleTestOutcomes` AUTO_INCREMENT=1;
 
@@ -121,7 +121,7 @@ ALTER TABLE `TestResults` AUTO_INCREMENT=1;
 
 CREATE TABLE `Symptoms` (
     `symptom_id` Int PRIMARY KEY auto_increment,
-    `name` Text NOT NULL
+    `name` Text UNIQUE NOT NULL
 );
 ALTER TABLE `Symptoms` AUTO_INCREMENT=1;
 
