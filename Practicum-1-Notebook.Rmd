@@ -6,6 +6,8 @@ output:
   html_notebook: default
 ---
 
+The steps we completed for Practicum 1 are detailed below. Please note that there are links to each image that requires it in each section. We decided to focus our attention on the case management aspect of the contract tracing problem.
+
 ## Conceptual Model: UML
 
 View the conceptual model in Lucid Chart here:
@@ -53,7 +55,27 @@ The `test` database after table creation.
 
 ![mysql after creation](imgs/MySQLWorkbench-create.png)\
 
+The following photos provide a detailed look at the schema of each table as it was created in MySQL.
 
+![CaseManagers](imgs/Describe_CaseManagers.png)\
+![Cases](imgs/Describe_Cases.png)\
+![CommunicationLogs](imgs/Describe_CommunicationLogs.png)\
+![CommunicationMethods](imgs/Describe_CommMethods.png)\
+![ContactLogs](imgs/Describe_ContactLogs.png)\
+![Individuals](imgs/Describe_Individuals.png)\
+![Messages](imgs/Describe_Messages.png)\
+![MonitoringLogs](imgs/Describe_MonitoringLogs.png)\
+![NextSteps](imgs/Describe_NextSteps.png)\
+![PossibleTestOutcomes](imgs/Describe_PossTestOutcomes.png)\
+![RiskLevels](imgs/Describe_RiskLevels.png)\
+![ServiceList](imgs/Describe_ServiceList.png)\
+![Services](imgs/Describe_Services.png)\
+![StepList](imgs/Describe_StepList.png)\
+![SymptomList](imgs/Describe_SymptomList.png)\
+![Symptoms](imgs/Describe_Symptoms.png)\
+![TestResults](imgs/Describe_TestResults.png)\
+![Tests](imgs/Describe_Tests.png)\
+![TrackedIndividuals](imgs/Describe_TrackedIndividuals.png)\
 
 ## Populating The Database
 
