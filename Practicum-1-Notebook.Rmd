@@ -90,3 +90,7 @@ Demonstrations that the data was loaded correctly can be found in the queries be
 ![Deaths by state](imgs/Query_Evan2.png)\
 ![Test information](imgs/Query_Evan3.png)\
 ![Did not provide daily checkins in quarantine](imgs/Query_Evan4.png)\
+![Number of cases assigned to each case manager](imgs/Query_Chandra1.png)
+![Contact information for those exposed without a case](imgs/Query_Chandra2.png)
+![Contact information for those with concerning symptoms](imgs/Query_Chandra3.png)
+![Individuals that have been re-exposed](imgs/Query_Chandra4.png)

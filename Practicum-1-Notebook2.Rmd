@@ -1,0 +1,154 @@
+---
+title: 'CS5200 Fall 2020: Practicum 1'
+author: "Chandra Davis, Evan Douglass"
+output:
+  pdf_document: default
+---
+
+The steps we completed for Practicum 1 are detailed below. Please note that there are links to each image that requires it in each section. We decided to focus our attention on the case management aspect of the contract tracing problem.
+
+## Conceptual Model: UML
+
+View the conceptual model in Lucid Chart here:
+
+https://app.lucidchart.com/invitations/accept/5602312e-dfc3-4423-975c-47190ce6022e
+
+<!-- Ensure this is the most up to date image -->
+![Conceptual UML](imgs/CS5200 - Practicum 1_UML.png)\
+
+## Logical Model: ERD
+
+View the logical model in Lucid Chart here:
+
+https://app.lucidchart.com/invitations/accept/7b497cbf-268d-4a03-b1a7-822b5a844fea
+
+<!-- Ensure this is the most up to date image -->
+![Logical ERD](imgs/CS5200 - Practicum 1_ERD.png)\
+
+\newpage
+
+## Schema
+
+View the schema in Google Docs here:
+
+https://docs.google.com/document/d/1o8pk51aed3BJSaBcwO2EMbT8I3ru_wpGTcTN4W-DbIM/edit?usp=sharing
+
+<!-- Ensure this is the most up to date image -->
+![schema](imgs/Practicum1-Schema.png)\
+
+## Creating Database Tables
+
+Should you wish to inspect the scripts that create the database and populate data, they can be found at:
+
+https://github.com/eldss-classwork/databases-practicum1-scripts
+
+The following images will show a progression from an empty database through table creation in MySQL Workbench.
+
+The MySQL Workbench start screen.
+
+![mysql start screen](imgs/MySQLWorkbench-IntroScreen.png)\
+
+The newly created, empty `test` database.
+
+![mysql empty db](imgs/MySQLWorkbench-emptydb.png)\
+
+\newpage
+
+The `test` database after table creation.
+
+![mysql after creation](imgs/MySQLWorkbench-create.png)\
+
+\newpage
+
+The following photos provide a detailed look at the schema of each table as it was created in MySQL.
+
+![CaseManagers](imgs/Describe_CaseManagers.png)\
+![Cases](imgs/Describe_Cases.png)\
+![CommunicationLogs](imgs/Describe_CommunicationLogs.png)\
+![CommunicationMethods](imgs/Describe_CommMethods.png)\
+![ContactLogs](imgs/Describe_ContactLogs.png)\
+![Individuals](imgs/Describe_Individuals.png)\
+![Messages](imgs/Describe_Messages.png)\
+![MonitoringLogs](imgs/Describe_MonitoringLogs.png)\
+![NextSteps](imgs/Describe_NextSteps.png)\
+![PossibleTestOutcomes](imgs/Describe_PossTestOutcomes.png)\
+![RiskLevels](imgs/Describe_RiskLevels.png)\
+![ServiceList](imgs/Describe_ServiceList.png)\
+![Services](imgs/Describe_Services.png)\
+![StepList](imgs/Describe_StepList.png)\
+![SymptomList](imgs/Describe_SymptomList.png)\
+![Symptoms](imgs/Describe_Symptoms.png)\
+![TestResults](imgs/Describe_TestResults.png)\
+![Tests](imgs/Describe_Tests.png)\
+![TrackedIndividuals](imgs/Describe_TrackedIndividuals.png)\
+
+\newpage
+
+## Populating The Database
+
+The script for populating data into our database can be found at the following link:
+
+https://github.com/eldss-classwork/databases-practicum1-scripts/blob/master/populate.sql
+
+Demonstrations that the data was loaded correctly can be found in the queries below. That is, they return the data that was loaded.
+
+## Queries
+
+The script for running all of the queries can be found at the following link:
+
+https://github.com/eldss-classwork/databases-practicum1-scripts/blob/master/queries.sql
+
+The following is the screenshots of the query results.
+\newline
+
+Query 1
+\newline
+![Communications sent to exposure level groups](imgs/Query_Evan1.png)\
+
+Query 2
+\newline
+![Deaths by state](imgs/Query_Evan2.png)\
+
+\newpage
+Query 3
+\newline
+![Test information](imgs/Query_Evan3.png)\
+
+\newpage
+Query 4
+\newline
+![Did not provide daily checkins in quarantine](imgs/Query_Evan4.png)\
+
+\newpage
+Query 5
+\newline
+-- Get the id and number of cases assigned to each case manager.
+\newline
+![Number of cases assigned to each case manager](imgs/Query_Chandra1.png)
+
+Query 6
+\newline
+-- Get the id, name, phone, and email of individuals who have been
+\newline
+-- in contact with a tracked individual but do not have a case yet.
+\newline
+![Contact information for those exposed without a case](imgs/Query_Chandra2.png)
+
+\newpage
+Query 7
+\newline
+-- Get the case, name, preferred communication method, contact information, 
+\newline
+-- and case closure date for tracked individuals who have a temperature over
+\newline
+-- 99 degrees F and are experiencing a cough or breathing problems.
+\newline
+![Contact information for those with concerning symptoms](imgs/Query_Chandra3.png)
+
+Query 8
+\newline
+-- Find the id of individuals that were not infected and have been re-exposed.
+\newline
+-- Include the date the original case was closed, and the new exposure date.
+\newline
+![Individuals that have been re-exposed](imgs/Query_Chandra4.png)
